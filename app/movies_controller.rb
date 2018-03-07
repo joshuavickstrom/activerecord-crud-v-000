@@ -42,7 +42,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  __
+  Movie.first.
 end
 
 def can_find_by_multiple_attributes
@@ -84,12 +84,12 @@ end
 def can_destroy_a_single_item
   Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
   __
-  __
+  movie.title.destory
 end
 
 def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}")
   end
-  __
+  movie.destroy_all
 end
